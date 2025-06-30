@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>  
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FILMARG - Inicio</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <style>
+    .swiper-container {
+      width: 100%;
+      height: 400px;
+      margin-bottom: 30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .swiper-slide {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(0.4);
+    }
+
+    .slide-info {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      color: #fff;
+      z-index: 2;
+      max-width: 500px;
+    }
+
+    .slide-info h2 {
+      font-size: 32px;
+      margin: 0;
+      color: #00aaff;
+      font-family: 'Bebas Neue', sans-serif;
+    }
+
+    .slide-info p {
+      font-size: 16px;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: #00aaff;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #00aaff;
+    }
+  </style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="usuario-top">
+    <a href="login/login.html" class="login-btn">Iniciar Sesión</a>
+    <a href="register/register.html" class="register-btn">Registrarse</a>
+  </div>
+
+  <div class="hero-content">
+    <img src="assets/logo.png" alt="Logo FILMARG" class="hero-logo">
+    <h1>Bienvenido a <span>FILMARG</span></h1>
+    <form class="buscador" action="#" method="GET">
+      <input type="text" name="q" placeholder="Buscar películas o series...">
+      <button type="submit">🔍</button>
+    </form>
+  </div>
+
+  <nav class="categorias">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="series.html">Series</a></li>
+      <li><a href="peliculas.html">Películas</a></li>
+      <li><a href="novedades.html">Novedades</a></li>
+      <li><a href="vivo.html">Deportes</a></li>
+      <li><a href="milista.html">Mi Lista</a></li>
+      <li><a href="Contacto/Contact.html">Contactanos</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <img src="assets/cobrakai.jpg" alt="Cobra Kai">
+      <div class="slide-info">
+        <h2>Cobra Kai</h2>
+        <p>Johnny Lawrence busca la redención al abrir un dojo Cobra Kai, reavivando su rivalidad con un exitoso Daniel LaRusso.</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="assets/spiderman.jpg" alt="spiderman">
+      <div class="slide-info">
+        <h2>Spider-Man: No Way Home</h2>
+        <p>Peter le pide ayuda al Doctor Strange para recuperar su vida, pero algo sale mal y provoca una fractura en el multiverso</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <img src="assets/mundial.jpg" alt="mundial">
+      <div class="slide-info">
+        <h2>FIFA WORLD CLUB CUP 2025</h2>
+        <p>Disfrutá el mundial de Clubes.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</section>
+
+
+<section class="product-hero">
+  <h2>Contenido Destacado</h2>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <div class="product-img">
+        <img src="assets/breakingbad.jpg" alt="Breaking Bad" />
+      </div>
+      <h3>Breaking Bad</h3>  
+      <p>Serie - 5 temporadas</p>
+      <a href="videos/breakingbad.html" class="btn">Ver ahora</a>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img">
+        <img src="assets/interstellar.jpg" alt="Interstellar" />
+      </div>
+      <h3>Interstellar</h3>
+      <p>Película - Ciencia Ficción</p>
+      <a href="videos/interstellar.html" class="btn">Ver ahora</a>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img">
+        <img src="assets/lacasadepapel.jpg" alt="La Casa de Papel" />
+      </div>
+      <h3>La Casa de Papel</h3>
+      <p>Serie - 4 temporadas</p>
+      <a href="videos/lacasadepapel.html" class="btn">Ver ahora</a>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img">
+        <img src="assets/endgame.jpg" alt="Avengers Endgame" />
+      </div>
+      <h3>Avengers: Endgame</h3>
+      <p>Película - Acción</p>
+      <a href="videos/endgame.html" class="btn">Ver ahora</a>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img">
+        <img src="assets/strangerthings.jpg" alt="Stranger Things" />
+      </div>
+      <h3>Stranger Things</h3>
+      <p>Serie - 4 temporadas</p>
+      <a href="videos/strangerthings.html" class="btn">Ver ahora</a>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img">
+        <img src="assets/dune.jpg" alt="Dune" />
+      </div>
+      <h3>Dune</h3>
+      <p>Película - Ciencia Ficción</p>
+      <a href="videos/dune.html" class="btn">Ver ahora</a>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img">
+        <img src="assets/dark.jpg" alt="Dark" />
+      </div>
+      <h3>Dark</h3>
+      <p>Serie - 3 temporadas</p>
+      <a href="videos/dark.html" class="btn">Ver ahora</a>
+    </div>
+
+    <div class="product-card">
+      <div class="product-img">
+        <img src="assets/batman.jpg" alt="The Batman" />
+      </div>
+      <h3>The Batman</h3>
+      <p>Película - Suspenso</p>
+      <a href="videos/batman.html" class="btn">Ver ahora</a>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  const swiper = new Swiper('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 5000,
+    }
+  });
+</script>
+
+</body>
+</html>
